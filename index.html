@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Chat App</title>
+  <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+  <script defer src="script.js"></script>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      background-color: #1ebea5;
+    }
+
+    #chat-container {
+      width: 80%;
+      height: 100vh;
+      max-width: 1200px;
+      background-color: #d9efde;
+      display: flex;
+      flex-direction: column;
+    }
+
+    #chat-container div {
+      background-color: #CCC;
+      padding: 5px;
+    }
+
+    #chat-container div:nth-child(2n) {
+      background-color: #FFF;
+    }
+
+    #form-container {
+      position: fixed;
+      padding-bottom: 30px;
+      bottom: 0;
+      background-color: grey;
+      max-width: 1200px;
+      width: 80%;
+      height: 30px;
+      display: flex;
+    }
+
+    #form-input {
+      flex-grow: 1;
+    }
+    .chat-title {
+      display: flex;
+      justify-content: center;
+    }
+    .chat-title > label {
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <div id="chat-container">
+    
+  </div>
+  <form id="form-container">
+    <input type="text" id="form-input">
+    <button type="submit" id="send-button">Send</button>
+  </form>
+</body>
+</html>

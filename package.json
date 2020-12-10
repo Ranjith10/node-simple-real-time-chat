@@ -1,0 +1,22 @@
+{
+  "name": "simple-real-time-chat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ranjith10/node-simple-real-time-chat.git"
+  },
+  "author": "Ranjith Kumar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ranjith10/node-simple-real-time-chat/issues"
+  },
+  "homepage": "https://github.com/Ranjith10/node-simple-real-time-chat#readme",
+  "dependencies": {
+    "socket.io": "^3.0.4"
+  }
+}
